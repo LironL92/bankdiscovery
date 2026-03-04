@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { SITE } from "@/lib/content/site";
+import { trackReferralCodeCopy } from "@/lib/tracking";
 
 export function ReferralCodeBlock() {
   const [copied, setCopied] = useState(false);
@@ -10,6 +11,7 @@ export function ReferralCodeBlock() {
     try {
       await navigator.clipboard.writeText(SITE.referralCode);
       setCopied(true);
+      trackReferralCodeCopy();
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Fallback for older browsers
@@ -20,6 +22,7 @@ export function ReferralCodeBlock() {
       document.execCommand("copy");
       document.body.removeChild(input);
       setCopied(true);
+      trackReferralCodeCopy();
       setTimeout(() => setCopied(false), 2000);
     }
   }

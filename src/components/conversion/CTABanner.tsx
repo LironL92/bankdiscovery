@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { SITE } from "@/lib/content/site";
+import { trackOpenAccountClick } from "@/lib/tracking";
 
 type Props = {
   variant?: "inline" | "hero" | "sticky";
@@ -17,6 +20,7 @@ export function CTABanner({
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-white dark:bg-navy-500 border-t border-slate-200 dark:border-slate-700 p-3 lg:hidden shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
         <Link
           href="/open-account"
+          onClick={() => trackOpenAccountClick("sticky")}
           className="block w-full bg-accent hover:bg-accent-600 text-white text-center py-3 rounded-lg font-medium text-sm transition-colors"
         >
           Open Account with Code {SITE.referralCode} &mdash; Earn 5,000 Miles
@@ -30,6 +34,7 @@ export function CTABanner({
       <div className="flex flex-col sm:flex-row gap-3">
         <Link
           href="/open-account"
+          onClick={() => trackOpenAccountClick("hero")}
           className="inline-flex items-center justify-center px-6 py-3 bg-accent hover:bg-accent-600 text-white rounded-lg font-medium transition-colors"
         >
           Open Your Account
@@ -57,6 +62,7 @@ export function CTABanner({
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <Link
           href="/open-account"
+          onClick={() => trackOpenAccountClick("inline")}
           className="inline-flex items-center px-6 py-3 bg-accent hover:bg-accent-600 text-white rounded-lg font-medium transition-colors"
         >
           Open Your Account

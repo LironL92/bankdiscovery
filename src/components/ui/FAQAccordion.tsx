@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FAQ } from "@/lib/content/faqs";
+import { trackFaqOpen } from "@/lib/tracking";
 
 type Props = {
   faqs: FAQ[];
@@ -25,7 +26,10 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: P
               className="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden"
             >
               <button
-                onClick={() => setOpenIndex(isOpen ? null : index)}
+                onClick={() => {
+                  if (!isOpen) trackFaqOpen(faq.question);
+                  setOpenIndex(isOpen ? null : index);
+                }}
                 className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
                 aria-expanded={isOpen}
               >

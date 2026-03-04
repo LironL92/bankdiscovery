@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { trackNewsletterSignup } from "@/lib/tracking";
 
 export function NewsletterCapture() {
   const [email, setEmail] = useState("");
@@ -11,6 +12,7 @@ export function NewsletterCapture() {
     if (!email) return;
     // TODO: Connect to email service
     console.log("Newsletter signup:", email);
+    trackNewsletterSignup();
     setSubmitted(true);
   }
 
