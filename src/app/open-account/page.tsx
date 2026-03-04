@@ -43,7 +43,7 @@ export default function OpenAccountPage() {
           </p>
           <div className="flex items-center justify-center gap-3">
             <a
-              href="https://apps.apple.com/za/app/discovery-bank/id1453498838"
+              href="https://apps.apple.com/za/app/discovery-bank/id1451167079"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
@@ -54,7 +54,7 @@ export default function OpenAccountPage() {
               App Store
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=za.co.discovery.bank"
+              href="https://play.google.com/store/apps/details?id=bank.discovery.banking.production.release"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
@@ -221,7 +221,7 @@ export default function OpenAccountPage() {
           <ReferralCodeBlock />
           <div className="mt-4 flex items-center justify-center gap-3">
             <a
-              href="https://apps.apple.com/za/app/discovery-bank/id1453498838"
+              href="https://apps.apple.com/za/app/discovery-bank/id1451167079"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
@@ -232,7 +232,7 @@ export default function OpenAccountPage() {
               App Store
             </a>
             <a
-              href="https://play.google.com/store/apps/details?id=za.co.discovery.bank"
+              href="https://play.google.com/store/apps/details?id=bank.discovery.banking.production.release"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
