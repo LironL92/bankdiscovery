@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <rect width="1200" height="1200" rx="120" fill="#0A1628"/>
+  <text x="600" y="640" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="520" fill="#FAFAF8" letter-spacing="-20">BD</text>
+  <rect x="160" y="820" width="880" height="6" rx="3" fill="#00A86B"/>
+  <text x="600" y="920" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="100" fill="#00A86B" letter-spacing="16">BANKDISCOVERY</text>
+</svg>
