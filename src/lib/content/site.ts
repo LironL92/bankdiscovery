@@ -75,7 +75,8 @@ export const FOOTER_LINKS = {
   resources: [
     { label: "Open Account", href: "/open-account" },
     { label: "Switching Guide", href: "/guides/switching-banks" },
-    { label: "Rewards Calculator", href: "/calculator/rewards" },
+    { label: "The App", href: "/app" },
+    { label: "Credit Card", href: "/credit" },
     { label: "About Us", href: "/about" },
   ],
 } as const;
